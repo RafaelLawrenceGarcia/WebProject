@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - TechStore</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style/faq.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <i class="fas fa-microchip"></i>
+            <span>TechStore</span>
+          </a>
+        </div>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          
+          <a href="cart.html" class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> &gt;
+          <span>FAQ</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <h2>How Can We Help You?</h2>
+          <p>Find answers to commonly asked questions about our products, services, shipping, returns, and more.</p>
+        </div>
+        
+        <div class="faq-search">
+          <input type="text" id="faq-search-input" placeholder="Search for answers...">
+          <button type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        
+        <div class="faq-tabs">
+          <button class="faq-tab active" data-category="all">All Questions</button>
+          <button class="faq-tab" data-category="ordering">Ordering</button>
+          <button class="faq-tab" data-category="shipping">Shipping</button>
+          <button class="faq-tab" data-category="returns">Returns</button>
+          <button class="faq-tab" data-category="products">Products</button>
+          <button class="faq-tab" data-category="payments">Payments</button>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-category" data-category="ordering">
+            <h3>Ordering</h3>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I place an order?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>You can place an order through our website by following these simple steps:</p>
+                <p>1. Browse through our products and add items to your cart.</p>
+                <p>2. Once you've selected all your items, click on the cart icon and proceed to checkout.</p>
+                <p>3. Fill in your shipping and payment information.</p>
+                <p>4. Review your order and confirm.</p>
+                <p>You'll receive an order confirmation email with the details of your purchase.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I modify or cancel my order after it's been placed?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>You can modify or cancel your order within 1 hour of placing it. To do so, please contact our customer service team immediately with your order number.</p>
+                <p>After the 1-hour window, we begin processing orders for shipment, and cancellations or modifications may not be possible. If your order has already been shipped, you'll need to follow our return process.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How can I check the status of my order?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>You can check the status of your order by:</p>
+                <p>1. Logging into your account and viewing your order history.</p>
+                <p>2. Using the tracking number provided in your shipping confirmation email.</p>
+                <p>3. Contacting our customer service team with your order number.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-category" data-category="shipping">
+            <h3>Shipping & Delivery</h3>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What are your shipping options and costs?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>We offer several shipping options:</p>
+                <p>- Standard Shipping (3-5 business days): $5.99 or FREE on orders over $50</p>
+                <p>- Express Shipping (2-3 business days): $12.99</p>
+                <p>- Next Day Delivery (order by 2pm): $19.99</p>
+                <p>International shipping rates vary by destination. Shipping costs are calculated at checkout.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How long will it take to receive my order?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Delivery times depend on your chosen shipping method and your location:</p>
+                <p>- Standard Shipping: 3-5 business days (domestic)</p>
+                <p>- Express Shipping: 2-3 business days (domestic)</p>
+                <p>- Next Day Delivery: 1 business day (must order by 2pm)</p>
+                <p>International orders typically take 7-14 business days, depending on the destination country and customs processing.</p>
+                <p>Please note that business days don't include weekends or holidays, and delivery times start from when your order has been processed, not when it was placed.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do you ship internationally?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, we ship to most countries worldwide. International shipping rates and delivery times vary by destination. Please note that international orders may be subject to customs duties and taxes, which are the responsibility of the recipient.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-category" data-category="returns">
+            <h3>Returns & Refunds</h3>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is your return policy?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>We offer a 30-day return policy. If you're not completely satisfied with your purchase, you can return it within 30 days of receiving your order for a full refund or exchange.</p>
+                <p>Items must be unused, in their original packaging, and in the same condition as when you received them. Some products like earphones and certain accessories may not be eligible for return due to hygiene reasons.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I initiate a return?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>To initiate a return:</p>
+                <p>1. Contact our customer service team to request a Return Authorization (RA) number.</p>
+                <p>2. Package the item securely with all original packaging and accessories.</p>
+                <p>3. Include the RA number on the outside of the package.</p>
+                <p>4. Ship the package to the address provided by our customer service team.</p>
+                <p>Once we receive and inspect the returned item(s), we'll process your refund or exchange.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How long does it take to process a refund?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>After we receive and inspect your return, we'll process your refund within 3-5 business days. The time it takes for the refund to appear in your account depends on your payment method:</p>
+                <p>- Credit/debit cards: 5-10 business days</p>
+                <p>- PayPal: 3-5 business days</p>
+                <p>- Store credit: Immediately</p>
+                <p>Please note that shipping costs are non-refundable unless the return is due to our error.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-category" data-category="products">
+            <h3>Products & Warranty</h3>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do your products come with a warranty?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, most of our products come with a manufacturer's warranty. The warranty period varies by product and brand:</p>
+                <p>- Smartphones and tablets: 1-2 years</p>
+                <p>- Laptops and computers: 1-3 years</p>
+                <p>- Audio products: 1 year</p>
+                <p>- Accessories: 3-6 months</p>
+                <p>The specific warranty information for each product is listed on the product page. Additionally, we offer a 30-day satisfaction guarantee on all purchases.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I claim warranty on a defective product?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>If you believe your product is defective and covered under warranty:</p>
+                <p>1. Contact our customer service team with your order number and a description of the issue.</p>
+                <p>2. Our team will guide you through the warranty claim process, which may involve returning the item for inspection.</p>
+                <p>3. If the product is determined to be defective under normal use, we will repair, replace, or refund the item in accordance with the warranty terms.</p>
+                <p>Please note that warranty does not cover damage from accidents, misuse, or normal wear and tear.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Are your products brand new and authentic?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, all products sold on TechStore are 100% brand new and authentic. We source our products directly from manufacturers or authorized distributors, ensuring you receive genuine items with full warranty coverage.</p>
+                <p>We do not sell refurbished, open-box, or counterfeit products. If you ever question the authenticity of a product received from us, please contact our customer service immediately.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-category" data-category="payments">
+            <h3>Payments & Security</h3>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What payment methods do you accept?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>We accept a variety of payment methods for your convenience:</p>
+                <p>- Credit/debit cards (Visa, Mastercard, American Express, Discover)</p>
+                <p>- PayPal</p>
+                <p>- Apple Pay</p>
+                <p>- Google Pay</p>
+                <p>- Shop Pay</p>
+                <p>- Bank transfers</p>
+                <p>- Gift cards and store credit</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Is it safe to use my credit card on your website?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, our website uses industry-standard security measures to protect your payment information:</p>
+                <p>- SSL encryption for all transactions</p>
+                <p>- PCI DSS compliance</p>
+                <p>- Secure payment processing through trusted partners</p>
+                <p>We never store your complete credit card information on our servers. Your financial data is transmitted securely to our payment processors who handle the transaction.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>When will my credit card be charged?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Your credit card will be authorized when you place the order, but it won't be charged until your order ships. If you've placed a pre-order or backorder, your card will only be charged when the item is ready to ship.</p>
+                <p>For split shipments (when items from your order ship separately), you may see multiple charges corresponding to each shipment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="still-have-questions">
+          <i class="fas fa-question-circle" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+          <h3>Still Have Questions?</h3>
+          <p>If you couldn't find the answer you were looking for, our customer support team is ready to help you.</p>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fas fa-microchip"></i>
+            <span>TechStore</span>
+          </div>
+          <p>Your one-stop shop for all things tech. Quality products, competitive prices, and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?category=smartphones">Smartphones</a></li>
+            <li><a href="products.html?category=laptops">Laptops</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=gaming">Gaming</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City, Country</li>
+            <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fas fa-envelope"></i> info@techstore.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>Designed by GARCIA, RAFAEL LAWRENCE P. – BSCS-22M1</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // FAQ JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // FAQ Accordion Functionality
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          this.classList.toggle('active');
+          const answer = this.nextElementSibling;
+          
+          if (this.classList.contains('active')) {
+            answer.classList.add('show');
+          } else {
+            answer.classList.remove('show');
+          }
+        });
+      });
+      
+      // FAQ Tab Functionality
+      const faqTabs = document.querySelectorAll('.faq-tab');
+      const faqCategories = document.querySelectorAll('.faq-category');
+      
+      faqTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs
+          faqTabs.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('active');
+          
+          const category = this.getAttribute('data-category');
+          
+          // Show/hide categories based on selection
+          if (category === 'all') {
+            faqCategories.forEach(cat => cat.style.display = 'block');
+          } else {
+            faqCategories.forEach(cat => {
+              if (cat.getAttribute('data-category') === category) {
+                cat.style.display = 'block';
+              } else {
+                cat.style.display = 'none';
+              }
+            });
+          }
+        });
+      });
+      
+      // FAQ Search Functionality
+      const searchInput = document.getElementById('faq-search-input');
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          const searchTerm = this.value.toLowerCase();
+          
+          if (searchTerm.length < 2) {
+            // Show all FAQ items if search term is too short
+            faqItems.forEach(item => item.style.display = 'block');
+            faqCategories.forEach(cat => cat.style.display = 'block');
+            return;
+          }
+          
+          // Set all tabs to inactive and set 'All' tab to active
+          faqTabs.forEach(tab => tab.classList.remove('active'));
+          document.querySelector('[data-category="all"]').classList.add('active');
+          
+          // Show all categories for searching
+          faqCategories.forEach(cat => cat.style.display = 'block');
+          
+          // Filter FAQ items
+          faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question').textContent.toLowerCase();
+            const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+            
+            if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+          
+          // Hide empty categories
+          faqCategories.forEach(category => {
+            const visibleItems = category.querySelectorAll('.faq-item[style="display: block"]');
+            if (visibleItems.length === 0) {
+              category.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
